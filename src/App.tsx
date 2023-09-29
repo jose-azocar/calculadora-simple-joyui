@@ -31,8 +31,8 @@ function App() {
       <Stack
         spacing={2}
         sx={{
-          justifyContent:"center",
-          alignItems:"center",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
         <h3>Calculadora en 5min</h3>
@@ -45,10 +45,19 @@ function App() {
             color: "white",
           }}
         />
-        <Stack sx={{ border: 2, padding: 0.4, borderRadius: 15, width: "300px", height:"300px" }}>
+        <Stack
+          sx={{
+            border: 2,
+            padding: 0.4,
+            borderRadius: 15,
+            width: "300px",
+            height: "300px",
+          }}
+        >
           <ButtonGroup
-            sx={{ padding: 0.6, "& button": { width: "25%", height:"50px" } }}
-            aria-label="outlined button group"
+            variant="soft"
+            sx={{ padding: 0.6, "& button": { width: "25%", height: "50px" } }}
+            aria-label="soft button group"
           >
             <Button onClick={() => setValue(value + "1")}>1</Button>
             <Button onClick={() => setValue(value + "2")}>2</Button>
@@ -58,8 +67,9 @@ function App() {
             </Button>
           </ButtonGroup>
           <ButtonGroup
-            sx={{ padding: 0.6, "& button": { width: "25%", height:"50px"} }}
-            aria-label="outlined button group"
+            variant="soft"
+            sx={{ padding: 0.6, "& button": { width: "25%", height: "50px" } }}
+            aria-label="soft button group"
           >
             <Button onClick={() => setValue(value + "4")}>4</Button>
             <Button onClick={() => setValue(value + "5")}>5</Button>
@@ -69,8 +79,9 @@ function App() {
             </Button>
           </ButtonGroup>
           <ButtonGroup
-            sx={{ padding: 0.6, "& button": { width: "25%", height:"50px" } }}
-            aria-label="outlined button group"
+            variant="soft"
+            sx={{ padding: 0.6, "& button": { width: "25%", height: "50px" } }}
+            aria-label="soft button group"
           >
             <Button onClick={() => setValue(value + "7")}>7</Button>
             <Button onClick={() => setValue(value + "8")}>8</Button>
@@ -80,8 +91,9 @@ function App() {
             </Button>
           </ButtonGroup>
           <ButtonGroup
-            sx={{ padding: 0.6, "& button": { width: "25%", height:"50px" } }}
-            aria-label="solid button group"
+            variant="soft"
+            sx={{ padding: 0.6, "& button": { width: "25%", height: "50px" } }}
+            aria-label="soft button group"
           >
             <Button onClick={() => value.length >= 1 && addSimbol(" / ")}>
               /
@@ -95,7 +107,7 @@ function App() {
             </Button>
           </ButtonGroup>
           <ButtonGroup
-            sx={{ padding: 0.6, "& button": { width: "50%", height:"50px" } }}
+            sx={{ padding: 0.6, "& button": { width: "50%", height: "50px" } }}
             variant="solid"
           >
             <Button onClick={() => setValue("")}>RESET</Button>
