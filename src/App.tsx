@@ -31,23 +31,23 @@ function App() {
       <Stack
         spacing={2}
         sx={{
-          alignContent: "center",
-          alignItems: "center",
+          justifyContent:"center",
+          alignItems:"center",
         }}
       >
         <h3>Calculadora en 5min</h3>
         <Input
           value={value}
           sx={{
-            width: "195px",
-            height: "45px",
+            width: "295px",
+            height: "50px",
             background: "#495057",
             color: "white",
           }}
         />
-        <Stack sx={{ border: 2, padding: 0.4, borderRadius: 15 }}>
+        <Stack sx={{ border: 2, padding: 0.4, borderRadius: 15, width: "300px", height:"300px" }}>
           <ButtonGroup
-            sx={{ padding: 0.6, "& button": { width: "25%" } }}
+            sx={{ padding: 0.6, "& button": { width: "25%", height:"50px" } }}
             aria-label="outlined button group"
           >
             <Button onClick={() => setValue(value + "1")}>1</Button>
@@ -58,7 +58,7 @@ function App() {
             </Button>
           </ButtonGroup>
           <ButtonGroup
-            sx={{ padding: 0.6, "& button": { width: "25%" } }}
+            sx={{ padding: 0.6, "& button": { width: "25%", height:"50px"} }}
             aria-label="outlined button group"
           >
             <Button onClick={() => setValue(value + "4")}>4</Button>
@@ -69,7 +69,7 @@ function App() {
             </Button>
           </ButtonGroup>
           <ButtonGroup
-            sx={{ padding: 0.6, "& button": { width: "25%" } }}
+            sx={{ padding: 0.6, "& button": { width: "25%", height:"50px" } }}
             aria-label="outlined button group"
           >
             <Button onClick={() => setValue(value + "7")}>7</Button>
@@ -80,7 +80,7 @@ function App() {
             </Button>
           </ButtonGroup>
           <ButtonGroup
-            sx={{ padding: 0.6, "& button": { width: "25%" } }}
+            sx={{ padding: 0.6, "& button": { width: "25%", height:"50px" } }}
             aria-label="solid button group"
           >
             <Button onClick={() => value.length >= 1 && addSimbol(" / ")}>
@@ -95,7 +95,7 @@ function App() {
             </Button>
           </ButtonGroup>
           <ButtonGroup
-            sx={{ padding: 0.6, "& button": { width: "50%" } }}
+            sx={{ padding: 0.6, "& button": { width: "50%", height:"50px" } }}
             variant="solid"
           >
             <Button onClick={() => setValue("")}>RESET</Button>
