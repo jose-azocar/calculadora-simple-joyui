@@ -31,7 +31,6 @@ function App() {
       <Stack
         spacing={2}
         sx={{
-          width: "1200px",
           alignContent: "center",
           alignItems: "center",
         }}
