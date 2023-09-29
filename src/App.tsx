@@ -35,7 +35,7 @@ function App() {
           alignItems: "center",
         }}
       >
-        <h3>Calculadora en 5min</h3>
+        <h3>Calculadora TS - JOYUI</h3>
         <Input
           value={value}
           sx={{
